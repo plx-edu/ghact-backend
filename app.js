@@ -12,11 +12,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/hello", (req, res) => {
-  res.json({ msg: "Greetings & Salutations" });
+  res.json({ msg: "Greetings & Salutations", status: 200 });
 });
 
 app.get("/dashboard", (req, res) => {
-  res.json({ msg: "Dashing when I'm bored" });
+  res.json({ msg: "Dashing when I'm bored", status: 201 });
 });
 
 app.listen(port, () => {
