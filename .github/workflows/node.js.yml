@@ -26,6 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm i
-      # - run: npm i -g pm2
-      - run: pm2 restart backenAPI
+      # - run: npm i -g pm2 # use once at least(?)
+      - run: pm2 restart backendAPI
     # pm2 restart: will restart our API with the given pid
